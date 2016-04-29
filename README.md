@@ -13,6 +13,32 @@ You'll be fetching your data from [this API](http://actuary-development.policyge
 
 The API returns 2 different kinds of policies, `underwritten_policies` and `instant_issue_policies`. Ignore the latter for this exercise and only display the `underwritten_policies`.
 
+## Implementation
+I used the following technologies for this task.
+
+- Python + Flask (proxy for policies endpoint)
+- JavaScript ES6 + Babel (front end)
+- React + Redux (view & state management)
+- jQuery (async request)
+
+Start the server locally:
+
+```
+python server.py
+```
+
+Send a sample request to the proxy server
+
+```
+curl 'http://localhost:3000/api/policies'
+```
+
+Access the site locally:
+
+```
+http://localhost:3000/
+```
+
 ## What we are / are not looking for
 - Consider this the first feature that you're adding to an application that will be under continuous development after this. Meaning that we understand that this is a toy example, but we want to see how you balance doing just enough to get the job done with also architecting the system enough to allow for extensibility in the future. There's no right answer since you don't know the future priorities for this application, but be ready to talk about the tradeoffs and what the balance is that you've struck.
 - There are cross-origin data fetching implications here. There are several different strategies for solving this issue. We're interested in seeing which solution you choose and why.
