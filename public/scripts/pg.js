@@ -80,8 +80,16 @@ const VISIBLE_COLUMNS = [
     ];
 
 const TEST_DATA = [
-	{"carrier":"aig","carrier_name":"American General Life Insurance Company","monthly_premium":56.4,"annual_premium":652.0,"name":"Select-a-Term - 30 Year  (Nov 2015)","underwriting_class":null,"health_category":"Preferred Plus Non-Tobacco","coverage_amount":700000,"term_in_years":30,"table_rating":0},
-    {"carrier":"prudential","carrier_name":"Pruco Life Insurance Company","monthly_premium":60.57,"annual_premium":673.0,"name":"Term Essential 30 (","underwriting_class":null,"health_category":"Preferred Best","coverage_amount":700000,"term_in_years":30,"table_rating":0}
+	{"carrier":"aig","carrier_name":"American General Life Insurance Company",
+	 "monthly_premium":56.4,"annual_premium":652.0,
+	 "name":"Select-a-Term - 30 Year  (Nov 2015)","underwriting_class":null,
+	 "health_category":"Preferred Plus Non-Tobacco","coverage_amount":700000,
+	 "term_in_years":30,"table_rating":0},
+    {"carrier":"prudential","carrier_name":"Pruco Life Insurance Company",
+	"monthly_premium":60.57,"annual_premium":673.0,
+	"name":"Term Essential 30 (","underwriting_class":null,
+	"health_category":"Preferred Best","coverage_amount":700000,
+	"term_in_years":30,"table_rating":0}
     	];
 
 const INITIAL_STATE = {
@@ -137,7 +145,7 @@ const render = () => {
 	);
 }
 
-const loadDataFromServer = function (url) {
+const loadDataFromServer = function (url) {	
 	$.ajax({
 		url: url,
 		dataType: 'json',
